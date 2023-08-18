@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const MenuBar = () => {
+    console.log('window', window.location.pathname)
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
@@ -14,13 +15,10 @@ export const MenuBar = () => {
                             <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
+                            <a className="nav-link" href="/usuario">Usuários</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a className="nav-link" href="/cadastro">Cadastro</a>
                         </li>
                     </ul>
                 </div>
